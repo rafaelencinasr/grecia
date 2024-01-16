@@ -1,5 +1,5 @@
 //let fechasArray = [];
-const proximasFechasElement = document.querySelector("#proximasFechas");
+const proximasFechasElement = document.querySelector("#fechas");
 
 //Obtiene las fechas desde el archivo fechas.json
 fetch('./fechas.json')

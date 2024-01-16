@@ -1,10 +1,261 @@
+:root{
+    --main-rosa: rgba(243, 169, 192, 1);
+}
+
+/*@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Anton&display=swap');*/
+
+html{
+    scroll-padding-top: 30px;
+    scroll-behavior:smooth
+}
+
 html, body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background-color: black;
+    color: white;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.iconoRedes:hover{
+    transform:scale(1.1);
+    filter: invert(100%) sepia(0%) saturate(621%) hue-rotate(193deg) brightness(97%) contrast(103%);
+}
+
+a{
+    text-decoration: none;
+    color: var(--main-rosa);
+    &:hover{
+        transition: 150ms;
+        text-decoration: underline;
+        color: white;
+    }
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    border-bottom: 2px solid white;
+    width: 100%;
 }
 
 #navbarSections{
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 35px; 
+    flex-grow: 1;
+    font-weight: 800;
+    color: var(--main-rosa);
+    font-size: 24px;
+    text-align: center;
+}
+
+#redesSocialesNavbar{
+    z-index: 99;
     display: flex;
     flex-direction: row;
+    justify-content: end;
+    gap: 15px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin: 5px 36px;
 }
+
+header{
+    margin: 0 5%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#imgPortada{
+    width: 100%;
+    height: 690px;
+    object-fit: cover;
+    position: relative;
+}
+ 
+
+#textoPortada{
+    color: var(--main-rosa);
+    text-align: center;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 14vw;
+
+    position: absolute;
+}
+
+#introduccion{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -50px;
+    font-size: 15px;
+}
+
+#introduccion>p{
+    max-width: 726px;
+    text-align: justify;
+}
+
+.sr-only:not(:focus):not(:active){
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.dropcap{
+    font-size: 6rem;
+    float: left;
+    margin: 0.1em 0.1em 0.1em 0;
+    line-height: 0.55;
+}
+
+#galeria{
+    /* margin: 0 200px; */
+    margin: 0 8%;
+    /* max-width: 1370px; */
+    height: 612px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: stretch;
+    grid-gap: 15px;
+}
+
+.itemGaleria{
+    min-width: 0;
+    min-height: 0;
+}
+
+.itemGaleria>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 150ms;
+    &:hover{
+        transition: 150ms;
+        transform:scale(1.03);
+    }
+}
+
+
+.item-1{
+    background-color: blue;
+}
+
+.item-2{
+    background-color: aquamarine;
+}
+
+.item-3{
+    background-color: bisque;
+}
+
+.item-4{
+    background-color: blueviolet;
+}
+
+.item-5{
+    background-color: brown;
+}
+
+.item-6{
+    background-color: burlywood;
+}
+
+/* Tablet */
+@media screen and (max-width: 992px) {
+    #redesSocialesNavbar{
+        display: none;
+    }
+    #introduccion>p{
+        max-width: 520px;
+        text-align: justify;
+    }
+
+    #galeria{
+        margin: 0 40px;
+        max-width: 1370px;
+        height: 100%;
+        display: grid;
+        gap: 18px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 250px);
+    }
+     
+  }
+
+/* Movil */
+@media screen and (max-width: 600px) {
+    html{
+        scroll-padding-top: 52px;
+    }
+    
+    body {
+      /* background-color: olive; */
+    }
+
+    #navbarSections{
+        font-size: 14px;
+        gap: 20px; 
+        padding: 13px 0;
+    }
+
+    #imgPortada{
+        width: 100%;
+        height: 290px;
+        object-fit: cover;
+        position: relative;
+    }
+
+    #redesSocialesNavbar{
+        display: none;
+    }
+
+    header{
+        margin: 0;
+    }
+
+    #introduccion{
+        margin: 0 38px;
+        font-size: 12px;
+    }
+    
+    #galeria{
+        margin: 0 40px;
+        max-width: 1370px;
+        height: 100%;
+        display: grid;
+        gap: 18px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 200px);
+    }
+  }
+
