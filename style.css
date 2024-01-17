@@ -324,11 +324,121 @@ header{
     }
 }
 
+.fecha-boton-agotados{
+    background-color: #ACA9A9;
+    &:hover{
+        background-color: #858181;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    &:active{
+        background-color: #ACA9A9;
+        /* box-shadow: inset 0px -9px 3px 0px rgba(0,0,0,0.1); */
+    }
+}
+
+#videos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#videosWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+#videos>p{
+    color: #F3A9C0;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-top: 0px;
+}
+
+.videoContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+    text-align: center;
+}
+
+.videoThumbnail{
+    width: 328px;
+    height: 183px;
+    flex-shrink: 0;
+    border-radius: 7px;
+    object-fit: cover;
+}
+
 .espaciado-seccion{
     margin-bottom: 124px;
 }
 
+#contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.botonContacto{
+    margin: 107px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--main-rosa);
+    padding: 15px 40px;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    font-family: "Abhaya Libre", serif;
+    font-size: 35px;
+    font-weight: 800;
+    &:hover{
+        background-color: #f186a8;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    &:active{
+        background-color: var(--main-rosa);
+        /* box-shadow: inset 0px -9px 3px 0px rgba(0,0,0,0.1); */
+    }
+}
+
+footer{
+    background-color: var(--main-rosa);
+    color: white;
+    width: 100%;
+    /* height: 150px; */
+    padding: 29px 0px 12px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    &>div>a{
+        color: white;
+    }
+
+    #redesFooter{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+}
 /* Tablet */
 @media screen and (max-width: 992px) {
     #redesSocialesNavbar{
@@ -367,6 +477,53 @@ header{
     .item-6:hover .descripcionImagen{
         opacity: 0;
     }
+
+    #videosWrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1fr);
+        gap: 40px;
+    }
+
+    .videoContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .botonContacto{
+        margin: 107px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        background-color: var(--main-rosa);
+        padding: 10px 25px;
+        color: white;
+        border: none;
+        border-radius: 14px;
+        font-family: "Abhaya Libre", serif;
+        font-size: 25px;
+        font-weight: 800;
+        width: 280px;
+        &:hover{
+            background-color: #f186a8;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        &:active{
+            background-color: var(--main-rosa);
+            /* box-shadow: inset 0px -9px 3px 0px rgba(0,0,0,0.1); */
+        }
+        &>img{
+            width: 25px;
+            height: auto;
+        }
+    }
+    
      
   }
 
@@ -507,6 +664,38 @@ header{
 
     .espaciado-seccion{
         margin-bottom: 81px;
+    }
+
+
+    .videoContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .fecha-boton-agotados{
+        background-color: #ACA9A9;
+        &:hover{
+            background-color: #858181;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        &:active{
+            background-color: #ACA9A9;
+            /* box-shadow: inset 0px -9px 3px 0px rgba(0,0,0,0.1); */
+        }
+    }
+
+    #videos>p{
+        color: #F3A9C0;
+        text-align: center;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        margin-top: 0px;
     }
     
   }

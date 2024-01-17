@@ -2,6 +2,13 @@
     "fechas":[
         {
             "fecha": "2024-01-15",
+            "ciudad": "Ciudad Obregón",
+            "lugar": "Teatro de la ciudad",
+            "soldOut": false,
+            "linkBoletera": "https://www.google.com/"
+        },
+        {
+            "fecha": "2024-01-17",
             "ciudad": "Guadalajara",
             "lugar": "Teatro Diana",
             "soldOut": false,
@@ -49,5 +56,6 @@
             "soldOut": false,
             "linkBoletera": "https://www.wikipedia.com/"
         }
+
     ]
 }
