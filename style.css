@@ -5,9 +5,10 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Anton&display=swap');*/
 
 html{
-    scroll-padding-top: 30px;
-    scroll-behavior:smooth
+    scroll-padding-top: 35px;
+    scroll-behavior:smooth !important;
 }
+
 
 html, body{
     margin: 0;
@@ -48,6 +49,13 @@ nav{
     z-index: 9;
     border-bottom: 2px solid white;
     width: 100%;
+}
+
+h1{
+    color: var(--main-rosa);
+    font-size: 58px;
+    font-weight: 800;
+    margin: 0;
 }
 
 #navbarSections{
@@ -137,10 +145,10 @@ header{
     line-height: 0.55;
 }
 
+
 #galeria{
-    /* margin: 0 200px; */
-    margin: 0 8%;
-    /* max-width: 1370px; */
+    margin-left: 8%;
+    margin-right: 8%;
     height: 612px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -152,6 +160,9 @@ header{
 .itemGaleria{
     min-width: 0;
     min-height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .itemGaleria>img{
@@ -162,12 +173,38 @@ header{
     &:hover{
         transition: 150ms;
         transform:scale(1.03);
+        filter: blur(0px) brightness(56%);
+        /* cursor: pointer; */
     }
 }
 
+.descripcionImagen{
+    font-size: 15px;
+    max-width: 440px;
+    font-weight: 800;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .15s ease-in-out;
+}
 
+.item-1:hover .descripcionImagen,
+.item-2:hover .descripcionImagen,
+.item-3:hover .descripcionImagen,
+.item-4:hover .descripcionImagen,
+.item-5:hover .descripcionImagen,
+.item-6:hover .descripcionImagen{
+    opacity: 1;
+}
+
+/* .item-2:hover .descripcionImagen{
+    opacity: 1;
+}
+ */
+/*
 .item-1{
     background-color: blue;
+
 }
 
 .item-2{
@@ -189,6 +226,108 @@ header{
 .item-6{
     background-color: burlywood;
 }
+*/
+
+/* Proximas fechas*/
+
+#fechas{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    border: 2px solid white;
+    max-width: 787px;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.fechaGrid{
+    display: grid;
+    width: 680px;
+    border-radius: 7px;
+    padding: 5px 20px 5px 8px;
+    grid-template-columns: 1fr 3fr 1fr ; /* 3 columnas */
+    grid-template-rows: 2fr 1fr; /* 2 filas*/
+    column-gap: 15px;
+    justify-content: center;
+   /*  align-items: center; */
+   margin-bottom: 17px;
+   &:hover{
+    background-color: #1B1B1B;
+   }
+}
+/* 
+.fechaGrid>*{
+    border: 1px solid red;
+}
+ */
+.fecha-dia{
+    grid-area: 1 / 1 / 2 /2;
+    text-align: center;
+    font-size: 65px;
+    font-weight: 800;
+    color: var(--main-rosa);
+    align-self: end;
+    line-height: 80%;
+}
+
+.fecha-mes{
+    grid-area: 2 / 1 / 3 / 2;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--main-rosa);
+    align-self: start;
+}
+
+.fecha-ciudad{
+    grid-area: 1 / 2 / 2 / 3;
+    font-size: 30px;
+    font-weight: 800;
+    align-self: end;
+    margin-bottom: 3px;
+}
+
+.fecha-lugar{
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: 25px;
+    font-weight: 500;
+    align-self: start;
+}
+
+.fecha-boton{
+    grid-area: 1 / 3 / 3 / 4;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    border-radius: 7px;
+    color: white;
+    background-color: var(--main-rosa);
+    align-self: center;
+    font-size: 25px;
+    font-weight: 800;
+    font-family: "Abhaya Libre", serif;
+    border: none;
+    &:hover{
+        background-color: #f186a8;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    &:active{
+        background-color: var(--main-rosa);
+        /* box-shadow: inset 0px -9px 3px 0px rgba(0,0,0,0.1); */
+    }
+}
+
+.espaciado-seccion{
+    margin-bottom: 124px;
+}
+
 
 /* Tablet */
 @media screen and (max-width: 992px) {
@@ -201,13 +340,32 @@ header{
     }
 
     #galeria{
-        margin: 0 40px;
+        margin-left: 40px;
+        margin-right: 40px;
         max-width: 1370px;
         height: 100%;
         display: grid;
         gap: 18px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3, 250px);
+    }
+
+    .itemGaleria>img{
+        &:hover{
+            transform:scale(1);
+            transition: 150ms;
+            filter: blur(0px) brightness(100%);
+            cursor:auto;
+        }
+    }
+
+    .item-1:hover .descripcionImagen,
+    .item-2:hover .descripcionImagen,
+    .item-3:hover .descripcionImagen,
+    .item-4:hover .descripcionImagen,
+    .item-5:hover .descripcionImagen,
+    .item-6:hover .descripcionImagen{
+        opacity: 0;
     }
      
   }
@@ -217,10 +375,11 @@ header{
     html{
         scroll-padding-top: 52px;
     }
-    
-    body {
-      /* background-color: olive; */
+
+    h1{
+        font-size: 40px;
     }
+    
 
     #navbarSections{
         font-size: 14px;
@@ -249,7 +408,8 @@ header{
     }
     
     #galeria{
-        margin: 0 40px;
+        margin-left: 40px;
+        margin-right: 40px;
         max-width: 1370px;
         height: 100%;
         display: grid;
@@ -257,5 +417,97 @@ header{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 200px);
     }
+
+    #fechas{
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        border-radius: 7px;
+        border: 2px solid white;
+        max-width: 341px;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0 20px;
+    }
+
+    .fechaGrid{
+        display: grid;
+        width: 311px;
+        border-radius: 7px;
+        padding: 5px 20px 5px 8px;
+        grid-template-columns: 60px 3fr 1fr ; /* 3 columnas */
+        grid-template-rows: 2fr 1fr; /* 2 filas*/
+        column-gap: 15px;
+        justify-content: center;
+       /*  align-items: center; */
+       margin-bottom: 0px;
+       &:hover{
+        background-color: #00000000;
+       }
+    }
+
+    .fecha-dia{
+        text-align: center;
+        color: var(--main-rosa);
+        font-size: 28px;
+        font-weight: 800;
+        align-self: end;
+        line-height: 80%;
+    }
+    
+    .fecha-mes{
+        grid-area: 2 / 1 / 3 / 2;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--main-rosa);
+        align-self: start;
+    }
+    
+    .fecha-ciudad{
+        grid-area: 1 / 2 / 2 / 3;
+        font-size: 15px;
+        font-weight: 800;
+        align-self: end;
+        margin-bottom: 3px;
+    }
+    
+    .fecha-lugar{
+        grid-area: 2 / 2 / 3 / 3;
+        font-size: 14px;
+        font-weight: 500;
+        align-self: start;
+    }
+    
+    .fecha-boton{
+        grid-area: 1 / 3 / 3 / 4;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 91px;
+        height: 28px;
+        border-radius: 7px;
+        color: white;
+        background-color: var(--main-rosa);
+        align-self: center;
+        font-size: 18px;
+        font-weight: 800;
+        font-family: "Abhaya Libre", serif;
+        border: none;
+        &:hover{
+            background-color: #f186a8;
+        }
+        &:active{
+            background-color: var(--main-rosa);
+            /* box-shadow: inset 0px -9px 3px 0px rgba(0,0,0,0.1); */
+        }
+    }
+
+    .espaciado-seccion{
+        margin-bottom: 81px;
+    }
+    
   }
 

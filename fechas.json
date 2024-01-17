@@ -1,49 +1,49 @@
 {
     "fechas":[
         {
-            "fecha": "15/enero/2024",
+            "fecha": "2024-01-15",
             "ciudad": "Guadalajara",
             "lugar": "Teatro Diana",
             "soldOut": false,
             "linkBoletera": "https://www.google.com/"
         },
         {
-            "fecha": "18/enero/2024",
+            "fecha": "2024-01-18",
             "ciudad": "CDMX",
             "lugar": "Teatro 123",
             "soldOut": true,
             "linkBoletera": "https://www.youtube.com/"
         },
         {
-            "fecha": "25/enero/2024",
+            "fecha": "2024-01-25",
             "ciudad": "Puebla",
             "lugar": "Teatro Diana 2",
             "soldOut": false,
             "linkBoletera": "https://www.facebook.com/"
         },
         {
-            "fecha": "4/febrero/2024",
+            "fecha": "2024-02-04",
             "ciudad": "Monterrey",
             "lugar": "Teatro Regios",
             "soldOut": false,
             "linkBoletera": "https://www.twitter.com/"
         },
         {
-            "fecha": "15/noviembre/2024",
+            "fecha": "2024-11-15",
             "ciudad": "Guadalajara 2",
             "lugar": "Teatro 456",
             "soldOut": false,
             "linkBoletera": "https://www.instagram.com/"
         },
         {
-            "fecha": "19/noviembre/2024",
+            "fecha": "2024-11-19",
             "ciudad": "CDMX 2",
             "lugar": "Teatro Aqui y Alla",
             "soldOut": true,
             "linkBoletera": "https://www.reddit.com/"
         },
         {
-            "fecha": "18/diciembre/2024",
+            "fecha": "2024-12-18",
             "ciudad": "Hermosillo",
             "lugar": "Auditorio del INAM",
             "soldOut": false,
