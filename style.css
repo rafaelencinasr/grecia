@@ -181,6 +181,7 @@ header{
 }
 
 .descripcionImagen{
+    text-align: center;
     font-size: 15px;
     max-width: 440px;
     font-weight: 800;
@@ -231,6 +232,11 @@ header{
     background-color: burlywood;
 }
 */
+
+#galeria4{
+    object-position: center 40%;
+}
+
 
 /* Proximas fechas*/
 
@@ -476,6 +482,7 @@ footer{
     }
 
     .descripcionImagen{
+        text-align: center;
         font-size: 15px;
         max-width: 440px;
         font-weight: 800;
@@ -587,7 +594,7 @@ footer{
         max-width: 1370px;
         height: 100%;
         display: grid;
-        gap: 18px;
+        gap: 25px;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 200px);
     }
