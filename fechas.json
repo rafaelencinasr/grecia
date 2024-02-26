@@ -1,61 +1,67 @@
 {
     "fechas":[
         {
-            "fecha": "2024-01-15",
-            "ciudad": "Ciudad Obregón",
-            "lugar": "Teatro de la ciudad",
+            "fecha": "2024-04-06",
+            "ciudad": "Querétaro",
+            "lugar": "La Caja Popular",
             "soldOut": false,
-            "linkBoletera": "https://www.google.com/"
+            "linkBoletera": "https://www.instagram.com/lapinchigrecia/"
         },
         {
-            "fecha": "2024-01-17",
+            "fecha": "2024-04-27",
             "ciudad": "Guadalajara",
-            "lugar": "Teatro Diana",
+            "lugar": "Centro Cultural Flore de Toloache",
             "soldOut": false,
-            "linkBoletera": "https://www.google.com/"
-        },
-        {
-            "fecha": "2024-01-18",
-            "ciudad": "CDMX",
-            "lugar": "Teatro 123",
-            "soldOut": true,
-            "linkBoletera": "https://www.youtube.com/"
-        },
-        {
-            "fecha": "2024-01-25",
-            "ciudad": "Puebla",
-            "lugar": "Teatro Diana 2",
-            "soldOut": false,
-            "linkBoletera": "https://www.facebook.com/"
-        },
-        {
-            "fecha": "2024-02-04",
+            "linkBoletera": "https://www.instagram.com/lapinchigrecia/"
+          },
+          {
+            "fecha": "2024-05-03",
             "ciudad": "Monterrey",
-            "lugar": "Teatro Regios",
+            "lugar": "The Escocés Pub & Pints",
             "soldOut": false,
-            "linkBoletera": "https://www.twitter.com/"
-        },
-        {
-            "fecha": "2024-11-15",
-            "ciudad": "Guadalajara 2",
-            "lugar": "Teatro 456",
+            "linkBoletera": "https://www.instagram.com/lapinchigrecia/"
+          },
+          {
+            "fecha": "2024-05-04",
+            "ciudad": "Ciudad Juárez",
+            "lugar": "Barra Negra",
             "soldOut": false,
-            "linkBoletera": "https://www.instagram.com/"
-        },
-        {
-            "fecha": "2024-11-19",
-            "ciudad": "CDMX 2",
-            "lugar": "Teatro Aqui y Alla",
-            "soldOut": true,
-            "linkBoletera": "https://www.reddit.com/"
-        },
-        {
-            "fecha": "2024-12-18",
-            "ciudad": "Hermosillo",
-            "lugar": "Auditorio del INAM",
+            "linkBoletera": "https://www.instagram.com/lapinchigrecia/"
+          },
+          {
+            "fecha": "2024-05-10",
+            "ciudad": "Costa Risa Comedy Fest",
+            "lugar": "Teatro Eugene O'Neill",
             "soldOut": false,
-            "linkBoletera": "https://www.wikipedia.com/"
-        }
-
+            "linkBoletera": "https://www.instagram.com/lapinchigrecia/"
+          },
+          {
+            "fecha": "2024-05-11",
+            "ciudad": "Costa Risa Comedy Fest",
+            "lugar": "Teatro Eugene O'Neill",
+            "soldOut": false,
+            "linkBoletera": "https://www.instagram.com/lapinchigrecia/"
+          },
+          {
+            "fecha": "2024-05-16",
+            "ciudad": "Tijuana",
+            "lugar": "Listo Pisto",
+            "soldOut": false,
+            "linkBoletera": "https://www.instagram.com/lapinchigrecia/"
+          },
+          {
+            "fecha": "2024-05-17",
+            "ciudad": "Ensenada",
+            "lugar": "Allegro Burgers & Grill",
+            "soldOut": false,
+            "linkBoletera": "https://www.instagram.com/lapinchigrecia/"
+          },
+          {
+            "fecha": "2024-05-18",
+            "ciudad": "Mexicali",
+            "lugar": "Malgro Cervecería & TapRoom",
+            "soldOut": false,
+            "linkBoletera": "https://www.instagram.com/lapinchigrecia/"
+          }
     ]
 }
