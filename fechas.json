@@ -5,28 +5,28 @@
             "ciudad": "Querétaro",
             "lugar": "La Caja Popular",
             "soldOut": false,
-            "linkBoletera": "https://www.instagram.com/lapinchigrecia/"
+            "linkBoletera": "https://lacajapopular.yasta.mx/eventos/483"
         },
         {
             "fecha": "2024-04-27",
             "ciudad": "Guadalajara",
             "lugar": "Centro Cultural Flore de Toloache",
             "soldOut": false,
-            "linkBoletera": "https://www.instagram.com/lapinchigrecia/"
+            "linkBoletera": "https://greciacastillo.yasta.mx/eventos/1"
           },
           {
             "fecha": "2024-05-03",
             "ciudad": "Monterrey",
             "lugar": "The Escocés Pub & Pints",
             "soldOut": false,
-            "linkBoletera": "https://www.instagram.com/lapinchigrecia/"
+            "linkBoletera": "https://www.goliiive.com/yaestoymedicada-greciacastillo"
           },
           {
             "fecha": "2024-05-04",
             "ciudad": "Ciudad Juárez",
             "lugar": "Barra Negra",
             "soldOut": false,
-            "linkBoletera": "https://www.instagram.com/lapinchigrecia/"
+            "linkBoletera": "https://avanzada.yasta.mx/eventos/94"
           },
           {
             "fecha": "2024-05-10",
@@ -40,28 +40,28 @@
             "ciudad": "Costa Risa Comedy Fest",
             "lugar": "Teatro Eugene O'Neill",
             "soldOut": false,
-            "linkBoletera": "https://www.instagram.com/lapinchigrecia/"
+            "linkBoletera": "https://www.tiquetebox.app/e/comedy_fest11"
           },
           {
             "fecha": "2024-05-16",
             "ciudad": "Tijuana",
             "lugar": "Listo Pisto",
             "soldOut": false,
-            "linkBoletera": "https://www.instagram.com/lapinchigrecia/"
+            "linkBoletera": "https://grecia-castillo-en-tijuana.boletia.com/"
           },
           {
             "fecha": "2024-05-17",
             "ciudad": "Ensenada",
             "lugar": "Allegro Burgers & Grill",
             "soldOut": false,
-            "linkBoletera": "https://www.instagram.com/lapinchigrecia/"
+            "linkBoletera": "https://greciacastillo.yasta.mx/eventos/5"
           },
           {
             "fecha": "2024-05-18",
             "ciudad": "Mexicali",
             "lugar": "Malgro Cervecería & TapRoom",
             "soldOut": false,
-            "linkBoletera": "https://www.instagram.com/lapinchigrecia/"
+            "linkBoletera": "https://greciacastillo.yasta.mx/eventos/4"
           }
     ]
 }
